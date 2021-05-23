@@ -13,17 +13,11 @@
 
 ---
 
-learn-binder
-
 ## Getting Started
 
-### Installation
+To launch an interactive notebook for the repository, visit
 
-learn-binder can be installed for Python 3.6+ with
-
-```bash
-pip install --user learn_binder
-```
+https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/HEAD?filepath=notebooks%2Fwelcome.ipynb
 
 ## Contributing
 
