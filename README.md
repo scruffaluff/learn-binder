@@ -1,7 +1,7 @@
 # learn-binder
 
-![](https://img.shields.io/pypi/v/learn-binder)
-![](https://img.shields.io/pypi/pyversions/learn-binder.svg)![](https://img.shields.io/badge/code%20style-black-000000.svg)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=nteract%2Ftree%2Fnotebooks%2Fwelcome.ipynb)
+![](https://img.shields.io/badge/code%20style-black-000000.svg)
 ![](https://img.shields.io/github/repo-size/wolfgangwazzlestrauss/learn-binder)
 ![](https://img.shields.io/github/license/wolfgangwazzlestrauss/learn-binder)
 
@@ -15,9 +15,12 @@
 
 ## Getting Started
 
-To launch an interactive notebook for the repository, visit
+Binder supports several Jupyter interfaces, choose your preferred interface by
+clicking one of the following links.
 
-https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/HEAD?filepath=notebooks%2Fwelcome.ipynb
+- [Classic](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=tree%2Fnotebooks%2Fwelcome.ipynb)
+- [Lab](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=lab%2Ftree%2Fnotebooks%2Fwelcome.ipynb)
+- [Nteract](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=nteract%2Ftree%2Fnotebooks%2Fwelcome.ipynb)
 
 ## Contributing
 
