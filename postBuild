@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+
+jupyter labextension install jupyterlab-jupytext
