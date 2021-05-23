@@ -1,0 +1,61 @@
+# MkDocs static site generator configuration file.
+#
+# For more information, visit https://www.mkdocs.org/user-guide/configuration/.
+
+copyright: Copyright &copy; 2021 Macklan Weinstein
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wolfgangwazzlestrauss
+    - icon: fontawesome/solid/envelope
+      link: mailto://wolfgang.wazzle.strauss@gmail.com
+extra_css:
+  - css/style.css
+extra_javascript:
+  - https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js
+  - js/index.js
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - footnotes
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+nav:
+  - Home: index.md
+  - User Guide: src/user/index.md
+  - API Reference: src/reference/index.md
+  - Developer Guide: src/developer/index.md
+plugins:
+  - mkdocstrings
+  - search
+repo_name: learn-binder
+repo_url: https://github.com/wolfgangwazzlestrauss/learn-binder
+site_author: Macklan Weinstein
+site_description: |
+  Personal workspace for learning Jupyter Binder integration.
+site_name: learn-binder
+site_url: https://wolfgangwazzlestrauss.github.io/learn-binder
+theme:
+  featues:
+    - navigation.tabs
+  name: material
+  palette:
+    accent: cyan
+    primary: teal
