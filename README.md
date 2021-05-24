@@ -1,6 +1,6 @@
 # learn-binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=nteract%2Ftree%2Fnotebooks%2Fwelcome.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=nteract%2Ftree%2Fnotebooks%2Findex.md)
 ![](https://img.shields.io/badge/code%20style-black-000000.svg)
 ![](https://img.shields.io/github/repo-size/wolfgangwazzlestrauss/learn-binder)
 ![](https://img.shields.io/github/license/wolfgangwazzlestrauss/learn-binder)
@@ -18,9 +18,9 @@
 Binder supports several Jupyter interfaces, choose your preferred interface by
 clicking one of the following links.
 
-- [Classic](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=tree%2Fnotebooks%2Fwelcome.ipynb)
-- [Lab](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=lab%2Ftree%2Fnotebooks%2Fwelcome.ipynb)
-- [Nteract](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=nteract%2Ftree%2Fnotebooks%2Fwelcome.ipynb)
+- [Classic](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=tree%2Fnotebooks%2Findex.md)
+- [Lab](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=lab%2Ftree%2Fnotebooks%2Findex.md)
+- [Nteract](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=nteract%2Ftree%2Fnotebooks%2Findex.md)
 
 ## Contributing
 
