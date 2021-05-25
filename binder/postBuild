@@ -23,7 +23,6 @@ execute_notebooks() {
 #######################################
 install_packages() {
   pip install .
-  jupyter labextension install jupyterlab-jupytext
 }
 
 #######################################

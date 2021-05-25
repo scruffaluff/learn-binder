@@ -10,8 +10,8 @@ jupyter:
 
 ## Table of Contents
 
-- [Preface](/nteract/edit/notebooks/index.ipynb)
-- [Chapter 1](/nteract/edit/notebooks/chapter_1.ipynb)
+- [Preface](./nteract/edit/notebooks/index.ipynb)
+- [Chapter 1](./nteract/edit/notebooks/chapter_1.ipynb)
 
 ## Jupyter
 

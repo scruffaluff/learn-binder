@@ -26,7 +26,7 @@ def download_audio(url: str) -> Tuple[ArrayLike, int]:
 def plot_audio(samples: ArrayLike) -> Tuple[Figure, Axes]:
     """Plot multiple channels of audio."""
 
-    figure, axes = pyplot.subplots(dpi=200, figsize=(8, 5))
+    figure, axes = pyplot.subplots(dpi=200, figsize=(12, 4))
     axes.plot(samples)
 
     axes.set_xlabel("Index")
