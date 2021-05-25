@@ -18,22 +18,24 @@ notebooks, see the top pulldown menus.
 |                              <kbd>Enter</kbd> | Edit the selected Jupyter cell                             |
 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>-</kbd> | Split the Jupyter cell at the cursor position              |
 
+[Chapter 1](./chapter_1.md)
+
 ```python
 from IPython import display
 from matplotlib import pyplot
 import io
-import learn_binder
 import librosa
 import numpy
 import requests
 import soundfile
+import toolkit
 
 array = numpy.linspace(0, 5, 100)
 pyplot.plot(array)
 ```
 
 ```python
-pyplot.plot(learn_binder.sawtooth())
+pyplot.plot(toolkit.sawtooth())
 ```
 
 This is an extra text block.
