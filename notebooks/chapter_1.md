@@ -1,3 +1,11 @@
+---
+jupyter:
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
 # Chapter 1: What Is Statistics?
 
 Statistics is a branch of mathematics that concerns the collection, analysis,

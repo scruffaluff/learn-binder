@@ -1,9 +1,17 @@
+---
+jupyter:
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
 # Statistics
 
 ## Table of Contents
 
-- [Preface](/nteract/edit/notebooks/index.md)
-- [Chapter 1](/nteract/edit/notebooks/chapter_1.md)
+- [Preface](/nteract/edit/notebooks/index.ipynb)
+- [Chapter 1](/nteract/edit/notebooks/chapter_1.ipynb)
 
 ## Jupyter
 

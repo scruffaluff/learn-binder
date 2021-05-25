@@ -3,6 +3,36 @@
 # https://repo2docker.readthedocs.io/en/latest/config_files.html#postbuild-run-code-after-installing-the-environment
 set -e
 
+#######################################
+# Get full normalized path for file.
+# Alternative to realpath command, since it is not built into MacOS.
+#######################################
+execute_notebooks() {
+  # Get full normalized path for notebooks folder.
+  #
+  # Flags:
+  #   -P: Resolve any symbolic links in the path.
+  repo_folder="$(cd "$(dirname "$(dirname "$0")")" && pwd -P)"
 
-pip install .
-jupyter labextension install jupyterlab-jupytext
+  jupytext --execute --to ipynb "${repo_folder}/notebooks/*.md"
+}
+
+#######################################
+# Get full normalized path for file.
+# Alternative to realpath command, since it is not built into MacOS.
+#######################################
+install_packages() {
+  pip install .
+  jupyter labextension install jupyterlab-jupytext
+}
+
+#######################################
+# Get full normalized path for file.
+# Alternative to realpath command, since it is not built into MacOS.
+#######################################
+main() {
+  install_packages
+  execute_notebooks
+}
+
+main
