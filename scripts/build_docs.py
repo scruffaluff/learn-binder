@@ -42,7 +42,7 @@ def generate_cli_docs(repo_path: pathlib.Path) -> None:
     with cli_doc.open("w") as handle:
         try:
             subprocess.run(
-                args="typer src/learn_binder/__main__.py utils docs",
+                args="typer src/toolkit/__main__.py utils docs",
                 shell=True,
                 check=True,
                 stdout=handle,

@@ -39,5 +39,5 @@ def test_version() -> None:
     toml_path = REPO_PATH / "pyproject.toml"
     expected = toml.load(toml_path)["tool"]["poetry"]["version"]
 
-    actual = learn_binder.__version__
+    actual = toolkit.__version__
     assert actual == expected

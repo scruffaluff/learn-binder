@@ -23,7 +23,7 @@ show_missing = true
 branch = true
 command_line = "-m pytest"
 omit = []
-source = ["learn_binder"]
+source = ["toolkit"]
 
 [tool.poetry]
 authors = ["Macklan Weinstein <wolfgang.wazzle.strauss@gmail.com>"]
