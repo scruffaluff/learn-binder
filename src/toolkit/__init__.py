@@ -5,10 +5,17 @@ __author__ = "Macklan Weinstein"
 __version__ = "0.1.0"
 
 
-import numpy
+import io
+from typing import Tuple
+
+from numpy.typing import ArrayLike
+import requests
+import soundfile
 
 
-def sawtooth() -> numpy.ndarray:
-    """Computes an example sawtooth wave."""
+def download_audio(url: str) -> Tuple[ArrayLike, int]:
+    """Fetch and load audio file from remote server."""
 
-    return numpy.array([-1 + (index % 200) / 100 for index in range(1_000)])
+    response = requests.get(url)
+    bytes = io.BytesIO(response.content)
+    return soundfile.read(bytes)

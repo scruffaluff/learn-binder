@@ -18,7 +18,9 @@ notebooks, see the top pulldown menus.
 |                              <kbd>Enter</kbd> | Edit the selected Jupyter cell                             |
 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>-</kbd> | Split the Jupyter cell at the cursor position              |
 
-[Chapter 1](./chapter_1.md)
+## Chapters
+
+[Chapter 1](/nteract/edit/notebooks/chapter_1.md)
 
 ```python
 from IPython import display
