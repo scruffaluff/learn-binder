@@ -5,7 +5,7 @@ import pathlib
 
 import toml
 
-import learn_binder
+import toolkit
 from tests import util
 
 
@@ -15,7 +15,7 @@ REPO_PATH = pathlib.Path(__file__).parents[1]
 def test_matching_structure() -> None:
     """Test directories match structure of src directory."""
 
-    src_path = REPO_PATH / "src/learn_binder"
+    src_path = REPO_PATH / "src/toolkit"
     test_path = REPO_PATH / "tests"
 
     error_msg = "Noe corresponding source code file {} for test file {}."
