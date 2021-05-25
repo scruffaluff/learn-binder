@@ -11,7 +11,7 @@ jupyter:
 ## Table of Contents
 
 - [Preface](./nteract/edit/notebooks/index.ipynb)
-- [Chapter 1](./nteract/edit/notebooks/chapter_1.ipynb)
+- [Chapter 1: Basics](./nteract/edit/notebooks/chapter_1.ipynb)
 
 ## Jupyter
 
@@ -36,11 +36,12 @@ Most audio files are from [SoundCamp](https://soundcamp.org/).
 ```python
 from IPython import display
 from matplotlib import pyplot
-import toolkit
+import toolkit.audio
 
 url = "https://soundcamp.org/sounds/381/snare/A/clean-snare-sample-a-key-06-oV5.wav"
 samples, rate = toolkit.audio.fetch(url)
 
-toolkit.audio.plot(samples)
+toolkit.audio.chart_bokeh(samples)
+toolkit.audio.chart_pyplot(samples)
 display.Audio(samples.T, rate=rate)
 ```

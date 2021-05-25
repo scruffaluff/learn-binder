@@ -6,20 +6,40 @@ jupyter:
     name: python3
 ---
 
-# Chapter 1: What Is Statistics?
+# Chapter 1: Basics
 
 Statistics is a branch of mathematics that concerns the collection, analysis,
 interpretation, and presentation of data.
 
 ## Definitions
 
-The sample _mean_ of a dataset $y_1, y_2, ..., y_n$ is defined as
+Let $X$ be a random variable with a finite number of outcomes $x_1, x_2, ...,
+x_n$ occurring with probabilities p_1, p_2, ..., p_n$ respectively.
 
-$$ \bar{y} = \frac{1}{n} \sum_{i=1}^{n} y_i. $$
+The _expectation_ of $X$ is a generalized notion of weighted average. It is
+notationally defined as
 
-The sample _variance_ of a dataset $y_1, y_2, ..., y_n$ is defined as
+$$ E[X] = \sum_{i=1}^{n} p_i x_i $$
 
-$$ s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (y_i - \bar{y})^2. $$
+If all outcomes are equiprobable, i.e. $p_1 = p_2 = ... = p_n$, then the
+_expectation_ equals the arithmetic _mean_.
+
+The _variance_ of $X$ is the expectation of the squared deviation of $X$ from
+its expectation. It is notationally defined as
+
+$$ \sigma^2 = E[(X - E[X])^2] $$
+
+The standard deviation of $X$ is defined as $\sigma = \sqrt{\sigma^2}$.
+
+When only a dataset of outcomes of $X$ is available, the underlying metrics are called population metrics, and the inferred metrics are called sample metrics.
+
+The _sample mean_ of an $X$ dataset is defined as
+
+$$ \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i. $$
+
+The _sample variance_ of an $X$ dataset is defined as
+
+$$ s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2 $$
 
 ## Examples
 
