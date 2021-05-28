@@ -1,6 +1,6 @@
 # Statistics
 
-[![](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=nteract%2Ftree%2Fnotebooks%2Findex.ipynb)
+[![](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wolfgangwazzlestrauss/learn-binder/master?urlpath=tree%2Fnotebooks%2Findex.ipynb)
 ![](https://img.shields.io/badge/code%20style-black-000000.svg)
 ![](https://img.shields.io/github/repo-size/wolfgangwazzlestrauss/learn-binder)
 ![](https://img.shields.io/github/license/wolfgangwazzlestrauss/learn-binder)

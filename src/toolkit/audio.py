@@ -4,10 +4,11 @@
 import io
 from typing import Tuple
 
-import bokeh.io
 from bokeh import plotting
+import bokeh.io
 from matplotlib import pyplot
 import numpy
+from plotly import express, graph_objects
 import requests
 import soundfile
 
@@ -40,10 +41,14 @@ def chart_bokeh(samples: Samples) -> plotting.Figure:
     return figure
 
 
-def chart_plotly(samples: Samples) -> None:
+def chart_plotly(samples: Samples) -> graph_objects.Figure:
     """Plot single channel of audio samples with Plotly."""
 
-    pass
+    figure = express.line(
+        y=samples, x_range=(0, len(samples)), y_range=(-1.0, 1.0)
+    )
+    figure.show()
+    return figure
 
 
 def chart_pyplot(samples: Samples) -> Tuple[pyplot.Figure, pyplot.Axes]:

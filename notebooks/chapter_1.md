@@ -31,7 +31,8 @@ $$ \sigma^2 = E[(X - E[X])^2] $$
 
 The standard deviation of $X$ is defined as $\sigma = \sqrt{\sigma^2}$.
 
-When only a dataset of outcomes of $X$ is available, the underlying metrics are called population metrics, and the inferred metrics are called sample metrics.
+When only a dataset of outcomes of $X$ is available, the underlying metrics are
+called population metrics, and the inferred metrics are called sample metrics.
 
 The _sample mean_ of an $X$ dataset is defined as
 

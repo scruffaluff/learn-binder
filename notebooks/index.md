@@ -10,8 +10,8 @@ jupyter:
 
 ## Table of Contents
 
-- [Preface](./nteract/edit/notebooks/index.ipynb)
-- [Chapter 1: Basics](./nteract/edit/notebooks/chapter_1.ipynb)
+- [Preface](index.ipynb)
+- [Chapter 1: Basics](chapter_1.ipynb)
 
 ## Jupyter
 
@@ -21,12 +21,12 @@ read the book is start at the top of each chapter and run each cell by pressing
 printed below the cell. For more information about how to use these Juptyer
 notebooks, see the top pulldown menus.
 
-|               Keyboard Command                | Action                             |
-| :-------------------------------------------: | ---------------------------------- |
-|       <kbd>Shift</kbd>+<kbd>Enter</kbd>       | Run cell and advance to next cell  |
-|       <kbd>Ctrl</kbd>+<kbd>Enter</kbd>        | Run cell and don't advance         |
-|        <kbd>Alt</kbd>+<kbd>Enter</kbd>        | Run cell and insert new cell after |
-|               <kbd>Enter</kbd>                | Edit cell                          |
+| Keyboard Command                              | Action                             |
+| :-------------------------------------------- | :--------------------------------- |
+| <kbd>Shift</kbd>+<kbd>Enter</kbd>             | Run cell and advance to next cell  |
+| <kbd>Ctrl</kbd>+<kbd>Enter</kbd>              | Run cell and don't advance         |
+| <kbd>Alt</kbd>+<kbd>Enter</kbd>               | Run cell and insert new cell after |
+| <kbd>Enter</kbd>                              | Edit cell                          |
 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>-</kbd> | Split cell at cursor position      |
 
 ### Examples
@@ -41,7 +41,17 @@ import toolkit.audio
 url = "https://soundcamp.org/sounds/381/snare/A/clean-snare-sample-a-key-06-oV5.wav"
 samples, rate = toolkit.audio.fetch(url)
 
-toolkit.audio.chart_bokeh(samples)
-toolkit.audio.chart_pyplot(samples)
 display.Audio(samples.T, rate=rate)
+```
+
+```python
+_ = toolkit.audio.chart_pyplot(samples)
+```
+
+```python
+_ = toolkit.audio.chart_plotly(samples)
+```
+
+```python
+_ = toolkit.audio.chart_bokeh(samples)
 ```
