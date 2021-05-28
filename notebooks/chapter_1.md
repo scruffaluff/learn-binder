@@ -14,7 +14,7 @@ interpretation, and presentation of data.
 ## Definitions
 
 Let $X$ be a random variable with a finite number of outcomes $x_1, x_2, ...,
-x_n$ occurring with probabilities p_1, p_2, ..., p_n$ respectively.
+x_n$ occurring with probabilities $p_1, p_2, ..., p_n$ respectively.
 
 The _expectation_ of $X$ is a generalized notion of weighted average. It is
 notationally defined as

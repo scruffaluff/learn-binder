@@ -53,6 +53,8 @@ dash = "^1.20.0"
 cufflinks = "^0.17.3"
 seaborn = "^0.11.1"
 jupyter-dash = "^0.4.0"
+jupyter-bokeh = "^3.0.0"
+jupyter-server-proxy = "^3.0.2"
 
 [tool.poetry.dev-dependencies]
 bandit = "^1.7.0"
