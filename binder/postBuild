@@ -8,15 +8,9 @@ set -e
 # Alternative to realpath command, since it is not built into MacOS.
 #######################################
 execute_notebooks() {
-  # Get full normalized path for notebooks folder.
-  #
-  # Flags:
-  #   -P: Resolve any symbolic links in the path.
-  repo_folder="$(cd "$(dirname "$(dirname "$0")")" && pwd -P)"
-
-  mkdir -p "${repo_folder}/dist/"
-  jupytext --execute --to ipynb "${repo_folder}/notebooks/*.md"
-  mv "${repo_folder}/notebooks/*.ipynb" "${repo_folder}/dist/"
+  mkdir -p dist/
+  jupytext --execute --to ipynb notebooks/*.md
+  mv notebooks/*.ipynb dist
 }
 
 #######################################
