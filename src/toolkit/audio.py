@@ -28,8 +28,8 @@ def chart_bokeh(samples: Samples) -> plotting.Figure:
 
     bokeh.io.output_notebook()
     figure = plotting.figure(
-        plot_width=1200,
         plot_height=400,
+        plot_width=1200,
         x_axis_label="Index",
         x_range=(0, len(samples)),
         y_axis_label="Amplitude",
@@ -45,8 +45,17 @@ def chart_plotly(samples: Samples) -> graph_objects.Figure:
     """Plot single channel of audio samples with Plotly."""
 
     figure = express.line(
-        y=samples, x_range=(0, len(samples)), y_range=(-1.0, 1.0)
+        height=400,
+        range_x=(0, len(samples)),
+        range_y=(-1.0, 1.0),
+        width=1200,
+        y=samples,
     )
+    figure.update_layout(
+        xaxis_title="Index",
+        yaxis_title="Amplitude",
+    )
+
     figure.show()
     return figure
 
@@ -54,7 +63,7 @@ def chart_plotly(samples: Samples) -> graph_objects.Figure:
 def chart_pyplot(samples: Samples) -> Tuple[pyplot.Figure, pyplot.Axes]:
     """Plot single channel of audio samples with PyPlot."""
 
-    figure, axes = pyplot.subplots(dpi=200, figsize=(12, 4))
+    figure, axes = pyplot.subplots(dpi=200, figsize=(6.75, 1.75))
     axes.plot(samples)
 
     axes.set_xlabel("Index")
