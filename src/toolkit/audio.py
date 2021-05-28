@@ -4,7 +4,7 @@
 import io
 from typing import Tuple
 
-from bokeh import plotting
+from bokeh import plotting, resources
 import bokeh.io
 from matplotlib import pyplot
 import numpy
@@ -26,11 +26,11 @@ def fetch(url: str) -> Tuple[Samples, int]:
 def chart_bokeh(samples: Samples) -> plotting.Figure:
     """Plot single channel of audio samples with Bokeh."""
 
-    bokeh.io.output_notebook()
+    bokeh.io.output_notebook(hide_banner=True, resources=resources.INLINE)
     figure = plotting.figure(
         plot_height=320,
         plot_width=920,
-        x_axis_label="Index",
+        x_axis_label="Sample",
         x_range=(0, len(samples)),
         y_axis_label="Amplitude",
         y_range=(-1.0, 1.0),
@@ -52,7 +52,7 @@ def chart_plotly(samples: Samples) -> graph_objects.Figure:
         y=samples,
     )
     figure.update_layout(
-        xaxis_title="Index",
+        xaxis_title="Sample",
         yaxis_title="Amplitude",
     )
 
@@ -66,7 +66,7 @@ def chart_pyplot(samples: Samples) -> Tuple[pyplot.Figure, pyplot.Axes]:
     figure, axes = pyplot.subplots(dpi=200, figsize=(6, 1.75))
     axes.plot(samples)
 
-    axes.set_xlabel("Index")
+    axes.set_xlabel("Sample")
     axes.set_xlim(0, len(samples))
     axes.set_ylabel("Amplitude")
     axes.set_ylim(-1, 1)

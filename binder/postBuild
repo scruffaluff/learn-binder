@@ -8,7 +8,11 @@ set -e
 # Alternative to realpath command, since it is not built into MacOS.
 #######################################
 execute_notebooks() {
-  jupytext --execute --to ipynb notebooks/*.md
+  for notebook in notebooks/*.md; do
+    jupytext --execute --to ipynb "${notebook}"
+    jupyter trust "${notebook/.md/.ipynb}"
+    rm "${notebook}"
+  done
 }
 
 #######################################
