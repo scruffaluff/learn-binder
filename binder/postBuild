@@ -8,9 +8,7 @@ set -e
 # Alternative to realpath command, since it is not built into MacOS.
 #######################################
 execute_notebooks() {
-  mkdir -p dist/
   jupytext --execute --to ipynb notebooks/*.md
-  mv notebooks/*.ipynb dist
 }
 
 #######################################
