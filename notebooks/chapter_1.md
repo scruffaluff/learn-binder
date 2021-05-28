@@ -45,3 +45,5 @@ $$ s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2 $$
 ## Examples
 
 The follow
+
+[Previous](index.ipynb) | [Next](chapter_1.ipynb)

@@ -55,3 +55,5 @@ _ = toolkit.audio.chart_plotly(samples)
 ```python
 _ = toolkit.audio.chart_bokeh(samples)
 ```
+
+[Next](chapter_1.ipynb)
