@@ -5,8 +5,8 @@ import pathlib
 
 import toml
 
-import toolkit
 from tests import util
+import toolkit
 
 
 REPO_PATH = pathlib.Path(__file__).parents[1]

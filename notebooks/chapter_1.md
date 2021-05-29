@@ -13,13 +13,15 @@ interpretation, and presentation of data.
 
 ## Definitions
 
-Let $X$ be a random variable with a finite number of outcomes $x_1, x_2, ...,
-x_n$ occurring with probabilities $p_1, p_2, ..., p_n$ respectively.
+Let $X$ be a random variable with a finite number of outcomes
+$x_1, x_2, ...,
+x_n$ occurring with probabilities $p_1, p_2, ..., p_n$
+respectively.
 
 The _expectation_ of $X$ is a generalized notion of weighted average. It is
 notationally defined as
 
-$$ E[X] = \sum_{i=1}^{n} p_i x_i $$
+$$ E[X] = \sum\_{i=1}^{n} p_i x_i $$
 
 If all outcomes are equiprobable, i.e. $p_1 = p_2 = ... = p_n$, then the
 _expectation_ equals the arithmetic _mean_.
@@ -36,11 +38,11 @@ called population metrics, and the inferred metrics are called sample metrics.
 
 The _sample mean_ of an $X$ dataset is defined as
 
-$$ \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i. $$
+$$ \bar{x} = \frac{1}{n} \sum\_{i=1}^{n} x_i. $$
 
 The _sample variance_ of an $X$ dataset is defined as
 
-$$ s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2 $$
+$$ s^2 = \frac{1}{n - 1} \sum\_{i=1}^{n} (x_i - \bar{x})^2 $$
 
 ## Examples
 
