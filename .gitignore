@@ -22,6 +22,7 @@
 **/__pycache__/
 **/.ipynb_checkpoints/
 **/*.egg-info/
+/docs/
 /docs/api/cli.md
 /docs/index.md
 dist/

@@ -1433,6 +1433,23 @@ optional = false
 python-versions = ">=2.6"
 
 [[package]]
+name = "pdoc"
+version = "7.0.2"
+description = "API Documentation for Python Projects"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+astunparse = {version = "*", markers = "python_version < \"3.9\""}
+Jinja2 = ">=2.11.0"
+MarkupSafe = "*"
+pygments = "*"
+
+[package.extras]
+dev = ["flake8", "hypothesis", "mypy", "pytest", "pytest-cov", "pytest-timeout", "tox"]
+
+[[package]]
 name = "pexpect"
 version = "4.8.0"
 description = "Pexpect allows easy control of interactive console applications."
@@ -2175,7 +2192,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7.1,<3.10.0"
-content-hash = "91f9a55a7cbc33050f71869f1d9454574734dc62a3cc04b46e296055c4126d67"
+content-hash = "aadb5df043f85cfe80b6a0f782ee1e163f279f0d5485f90145fdec4a437897a5"
 
 [metadata.files]
 aiohttp = [
@@ -2992,6 +3009,9 @@ pathspec = [
 pbr = [
     {file = "pbr-5.6.0-py2.py3-none-any.whl", hash = "sha256:c68c661ac5cc81058ac94247278eeda6d2e6aecb3e227b0387c30d277e7ef8d4"},
     {file = "pbr-5.6.0.tar.gz", hash = "sha256:42df03e7797b796625b1029c0400279c7c34fd7df24a7d7818a1abb5b38710dd"},
+]
+pdoc = [
+    {file = "pdoc-7.0.2-py3-none-any.whl", hash = "sha256:6ca3e934da454c56f52471b0ee0f9665478a58907f960ab81bc01e8b63715c25"},
 ]
 pexpect = [
     {file = "pexpect-4.8.0-py2.py3-none-any.whl", hash = "sha256:0b48a55dcb3c05f3329815901ea4fc1537514d6ba867a152b581d69ae3710937"},
