@@ -1,5 +1,11 @@
 ---
 jupyter:
+  jupytext:
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: "1.3"
+      jupytext_version: 1.11.2
   kernelspec:
     display_name: Python 3
     language: python
@@ -19,9 +25,7 @@ x_n$ occurring with probabilities $p_1, p_2, ..., p_n$
 respectively.
 
 The _expectation_ of $X$ is a generalized notion of weighted average. It is
-notationally defined as
-
-$$ E[X] = \sum\_{i=1}^{n} p_i x_i $$
+notationally defined as $ E[X] = \sum_{i=1}^{n} p_i x_i $.
 
 If all outcomes are equiprobable, i.e. $p_1 = p_2 = ... = p_n$, then the
 _expectation_ equals the arithmetic _mean_.
@@ -38,14 +42,33 @@ called population metrics, and the inferred metrics are called sample metrics.
 
 The _sample mean_ of an $X$ dataset is defined as
 
-$$ \bar{x} = \frac{1}{n} \sum\_{i=1}^{n} x_i. $$
+$$ \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i. $$
 
 The _sample variance_ of an $X$ dataset is defined as
 
-$$ s^2 = \frac{1}{n - 1} \sum\_{i=1}^{n} (x_i - \bar{x})^2 $$
+$$ s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2 $$
 
 ## Examples
 
 The follow
+
+```python
+from IPython import display
+from matplotlib import pyplot
+import numpy
+from pandas import DataFrame
+import toolkit.audio
+
+url = "https://soundcamp.org/sounds/382/bongo_high_pitch_hit_yT1.wav"
+samples, rate = toolkit.audio.fetch(url)
+
+display.Audio(samples, rate=rate)
+```
+
+Common statistics can be calculated with Numpy.
+
+```python
+DataFrame([{"mean": numpy.mean(samples), "std": numpy.std(samples)}])
+```
 
 [Previous](index.ipynb) | [Next](chapter_1.ipynb)

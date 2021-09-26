@@ -41,7 +41,7 @@ import toolkit.audio
 url = "https://soundcamp.org/sounds/381/snare/A/clean-snare-sample-a-key-06-oV5.wav"
 samples, rate = toolkit.audio.fetch(url)
 
-display.Audio(samples.T, rate=rate)
+display.Audio(samples, rate=rate)
 ```
 
 ```python

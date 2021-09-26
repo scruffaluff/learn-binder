@@ -22,7 +22,8 @@ def fetch(url: str) -> Tuple[Samples, int]:
     bytes = io.BytesIO(response.content)
     # Since an out argument was not passed to the method, it is guaranteed to
     # return a Numpy array and an integer sample rate.
-    return soundfile.read(bytes)  # type: ignore
+    samples, rate = soundfile.read(bytes, always_2d=True)  # type: ignore
+    return numpy.average(samples, axis=1), rate
 
 
 def chart_bokeh(samples: Samples) -> plotting.Figure:
