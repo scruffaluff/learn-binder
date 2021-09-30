@@ -37,14 +37,23 @@ RUN adduser --disabled-password \
 USER "${USER}"
 WORKDIR "${HOME}"
 
+# Set Bash as default shell.
+SHELL ["/bin/bash", "-c"]
+
 RUN mkdir build
 
 COPY ./README.md build/
 COPY ./pyproject.toml build/
 COPY ./src build/
 
-RUN (cd build && pip install --use-feature=in-tree-build .)
+RUN pip install --use-feature=in-tree-build ./build/
 
-COPY ./notebooks ./
+COPY --chown="${USER}" ./notebooks ./notebooks
 
 WORKDIR "${HOME}/notebooks"
+
+RUN for notebook in *.md; do \
+    jupytext --execute --to ipynb "${notebook}"; \
+    jupyter trust "${notebook/.md/.ipynb}"; \
+    rm "${notebook}"; \
+  done
