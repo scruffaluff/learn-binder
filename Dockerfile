@@ -3,7 +3,7 @@ FROM python:3.9
 ARG NB_USER
 ARG NB_UID
 
-ENV USER "${NB_USER:-binder}"
+ENV USER "${NB_USER:-joyvan}"
 ENV HOME "/home/${USER}"
 ENV PATH "${HOME}/.local/bin:${PATH}"
 
