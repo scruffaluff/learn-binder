@@ -9,7 +9,6 @@ set -e
 #######################################
 execute_notebooks() {
   for notebook in notebooks/*.md; do
-    jupytext --execute --to ipynb "${notebook}"
     jupyter trust "${notebook/.md/.ipynb}"
     rm "${notebook}"
   done
