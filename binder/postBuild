@@ -1,18 +1,8 @@
 #!/usr/bin/env bash
 #
 # https://repo2docker.readthedocs.io/en/latest/config_files.html#postbuild-run-code-after-installing-the-environment
-set -e
 
-#######################################
-# Get full normalized path for file.
-# Alternative to realpath command, since it is not built into MacOS.
-#######################################
-execute_notebooks() {
-  for notebook in notebooks/*.md; do
-    jupyter trust "${notebook/.md/.ipynb}"
-    rm "${notebook}"
-  done
-}
+set -e
 
 #######################################
 # Get full normalized path for file.
