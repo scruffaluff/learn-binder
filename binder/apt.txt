@@ -1,3 +1,4 @@
+libpangocairo
 libsndfile1
 texlive-fonts-recommended
 texlive-generic-recommended

@@ -44,7 +44,6 @@ jupyter-bokeh = "^3.0.2"
 jupyter-server-proxy = "^3.1.0"
 jupyterlab = "^3.1.13"
 jupyterlab-dash = "^0.1.0-alpha.3"
-jupytext = "^1.13.0"
 librosa = "^0.8.1"
 manim = "^0.14.0"
 matplotlib = "^3.4.3"
@@ -61,7 +60,7 @@ typing-extensions = "^3.10.0.2"
 
 [tool.poetry.dev-dependencies]
 bandit = "^1.7.0"
-black = "^21.9b0"
+black = {extras = ["jupyter"], version = "^21.12b0"}
 coverage = { version = "^5.5.0", extras = ["toml"] }
 flake8 = "^3.9.2"
 flake8-bugbear = "^21.9.1"
@@ -82,6 +81,7 @@ pytest-mock = "^3.6.1"
 testbook = "^0.4.2"
 toml = "^0.10.2"
 tox = "^3.24.4"
+nbqa = "^1.2.3"
 
 [tool.pytest.ini_options]
 addopts = "-sv"

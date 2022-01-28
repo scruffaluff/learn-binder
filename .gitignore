@@ -28,6 +28,7 @@ dist/
 environment.yml
 f1
 flit.ini
+media/
 node_modules/
 nohup.out
 package-lock.json

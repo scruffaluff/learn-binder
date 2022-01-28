@@ -48,8 +48,10 @@ jobs:
         run: |
           poetry run bandit -ilr src/
           poetry run black --check .
-          poetry run flake8 src/ tests/
-          poetry run mypy --install-types --non-interactive src/ tests/
+          poetry run flake8 .
+          poetry run nbqa flake8 .
+          poetry run mypy --install-types --non-interactive .
+          poetry run nbqa mypy --install-types --non-interactive .
 
   test:
     name: Run test suite for Python 3.9 on Ubuntu
