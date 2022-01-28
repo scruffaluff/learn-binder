@@ -1,4 +1,6 @@
-libpangocairo
+ffmpeg
+libcairo2-dev
+libpango1.0-dev 
 libsndfile1
 texlive-fonts-recommended
 texlive-generic-recommended

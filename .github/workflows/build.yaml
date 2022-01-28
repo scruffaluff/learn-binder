@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout code repository
         uses: actions/checkout@v2
+      - name: Install Apt packages
+        run: sudo apt install libcairo2-dev libpango1.0-dev ffmpeg
       - name: Install Node interpreter
         uses: actions/setup-node@v2
         with:
@@ -59,6 +61,8 @@ jobs:
     steps:
       - name: Checkout code repository
         uses: actions/checkout@v2
+      - name: Install Apt packages
+        run: sudo apt install libcairo2-dev libpango1.0-dev ffmpeg
       - name: Install Python interpreter
         uses: actions/setup-python@v2
         with:
