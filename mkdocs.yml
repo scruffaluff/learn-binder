@@ -6,7 +6,7 @@ copyright: Copyright &copy; 2021 Macklan Weinstein
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/wolfgangwazzlestrauss
+      link: https://github.com/scruffaluff
     - icon: fontawesome/solid/envelope
       link: mailto://wolfgang.wazzle.strauss@gmail.com
 extra_css:
@@ -46,12 +46,12 @@ plugins:
   - mkdocstrings
   - search
 repo_name: learn-binder
-repo_url: https://github.com/wolfgangwazzlestrauss/learn-binder
+repo_url: https://github.com/scruffaluff/learn-binder
 site_author: Macklan Weinstein
 site_description: |
   Personal workspace for learning Jupyter Binder integration.
 site_name: learn-binder
-site_url: https://wolfgangwazzlestrauss.github.io/learn-binder
+site_url: https://scruffaluff.github.io/learn-binder
 theme:
   featues:
     - navigation.tabs

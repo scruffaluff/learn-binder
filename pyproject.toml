@@ -28,8 +28,8 @@ source = ["toolkit"]
 [tool.poetry]
 authors = ["Macklan Weinstein <wolfgang.wazzle.strauss@gmail.com>"]
 description = "Personal workspace for learning Jupyter Binder integration."
-documentation = "https://wolfgangwazzlestrauss.github.io/learn-binder"
-homepage = "https://github.com/wolfgangwazzlestrauss/learn-binder"
+documentation = "https://scruffaluff.github.io/learn-binder"
+homepage = "https://github.com/scruffaluff/learn-binder"
 keywords = []
 name = "toolkit"
 readme = "README.md"
